@@ -22,8 +22,8 @@
                 <script src="https://cdn.timekit.io/booking-js/v2/booking.min.js" defer></script>
                 <script>
                 window.timekitBookingConfig = {
-                app_key: 'test_widget_key_LnYG4PVTYPvuLZMgo56uAYB0MhzOUU7S',
-                project_id: '94a74f0e-8eb7-4f1c-905e-00f6ac4d4d8e'
+                app_key: 'live_widget_key_RXqzkyvafUHQ4fv3GOB3lZZArA5Tnjh5',
+                project_id: 'c1ef5daa-0ee4-4301-ac95-746ba165938b'
                 }
                 </script>
             </div>
