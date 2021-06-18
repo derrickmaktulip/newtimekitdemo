@@ -13,6 +13,7 @@
         <ul class="navItems">
             <li><a href="#">Home</a></li>
             <li><a href="barbers.php">Our Barbers</a></li>
+            <li><a href="about.php">About Us</a></li>
         </ul>
         <div class="widget">
             <button class="dropdownButton">Schedule Now</button>
