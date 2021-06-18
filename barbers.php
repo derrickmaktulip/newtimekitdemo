@@ -44,7 +44,7 @@
 
                 curl_setopt($ch, CURLOPT_URL, 'https://api.timekit.io/v2/resources');
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-                curl_setopt($ch, CURLOPT_USERPWD, ":test_api_key_SDNQJPMKyQ2GOD1iI3CO9jMJ5IphqKWo");
+                curl_setopt($ch, CURLOPT_USERPWD, ":live_api_key_NuvN1bCG3Vv7la7vpPDYaqJDCOrg135g");
                 curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
                 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
                     'Content-Type: application/json',
