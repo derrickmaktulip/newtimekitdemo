@@ -30,6 +30,29 @@
             </div>
         </div>
     </nav>
+    <section>
+    <div id="bookingjs"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.timekit.io/booking-js/v2/booking.min.js"></script>
+<script>
+  window.timekitBookingConfig = {
+    app_key: 'live_widget_key_RXqzkyvafUHQ4fv3GOB3lZZArA5Tnjh5',
+    project_id: 'c1ef5daa-0ee4-4301-ac95-746ba165938b',
+    availability: {
+      length: '9 hours',
+      start: 'tomorrow'
+    },
+    availability_constraints: [
+      {
+        allow_hours: { 'start: 9, end: 17 }
+      }
+    ]
+    fullcalendar: {
+      defaultView: 'month'
+    }
+  }
+</script>        
+</section>
     <main>
         <div class="banner">
             <div class="bannerText">

@@ -215,3 +215,13 @@ footer {
 .timekit a img{
     height: 100%;
 }
+
+.bookingjs { 
+    width: 300px; 
+    display: block; 
+    margin: 60px 10px; }
+
+.widgets {
+    display:flex;
+    padding-top:60px;
+}

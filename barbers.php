@@ -13,6 +13,7 @@
         <ul class="navItems">
             <li><a href="..">Home</a></li>
             <li><a href="barbers.php">Our Barbers</a></li>
+            <li><a href="barbers2.php">New Booking Page</a></li>
             <li><a href="about.php">About Us</a></li>
         </ul>
         <div class="widget">
@@ -58,14 +59,21 @@
                 };
                 $data = json_decode($output,true);
                 foreach ($data['data'] as $person) {
-                    if (strcmp(substr($person['email'],0,9),"resource+")!=0) {
+                    if (strcmp(substr($person['email'],0,9),"resource+")!=0) #this is to filter out resources that do not have emails, this will check the resoure's email and if it sees 'resource+' in the beginning, it will not display the resource on barbers.                   
+                    {
                         echo "<li class='barber'>
                             <div 'barberText'>
                                 <h3 class='barberName'>".$person['name']."</h3>".
                                 "<button type='button' class='bookButton'><a href='https://book.timekit.io/".$person['first_name']."-bookings-companyname'>Book with ".$person['first_name']."</a></button>".
                             "</div>".
-                            "<img src='".$person['image']."' class='profilePic'>
+                        "<img src='";
+                        if (isset( $person['image'])) {
+                        echo $person['image']."' class='profilePic'>
                         </li>";
+                            }  else {
+                        echo "images/default.png' class='profilePic'>
+                        </li>";
+                            }
                     }
                 }
                 curl_close();
