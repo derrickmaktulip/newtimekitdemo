@@ -1,3 +1,5 @@
+//= require jquery
+//= require jquery_ujs
 <!DOCTYPE html>
 <html lang="en">
 <head>
