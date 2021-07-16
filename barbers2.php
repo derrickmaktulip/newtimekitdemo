@@ -1,5 +1,3 @@
-//= require jquery
-//= require jquery_ujs
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,8 +26,7 @@
 
 
   <div id="bookingjs1">
-    <script type="text/javascript">
-   <script> 
+    <script>
       var widget1 = new TimekitBooking();
       widget1.init({
         el: '#bookingjs1',
@@ -46,7 +43,6 @@
         to: '4 weeks'
         }
        });
-       </script>
     </script>
   </div>
 
